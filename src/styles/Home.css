@@ -1,0 +1,47 @@
+
+
+@media screen and (max-width:480px) {
+
+#Home{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+   
+}
+
+.home-btn{
+    margin: 0.52rem;
+    font-size:1rem;
+    height: 2rem;
+    width: 8rem;
+    border-radius: 5px;
+    border-style:none;
+
+}
+
+#view-products-btn{
+    background-color: rgb(28, 92, 211);
+    
+}
+
+#about-us-btn{
+    background-color: rgb(213, 218, 228);
+}
+
+#about-us-btn>a{
+    color:rgba(14, 1, 1, 0.945)
+}
+
+#view-products-btn>a{
+    color: rgb(246, 252, 252);
+    
+}
+
+.home-link{
+    text-decoration: none;
+    font-weight: 200;
+}
+
+}

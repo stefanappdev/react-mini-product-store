@@ -1,17 +1,27 @@
+import { Link, useNavigate } from "react-router-dom";
 import { products } from "./products";
+import '../styles/products.css'
+
+
 
 const ProductList=()=>{
-
+   let navigate=useNavigate();
    const PL=products.map(product=>{
 
-        return (<div key={product.id} id={`product-${product.id}`}>
+        return (<div key={product.id} className="product-snapshot" id={`product-${product.id}`}>
 
-            <img alt={product.name} src=''></img>
+            <div className="product-highlight">
+                <img className="product-image" alt={product.name} src={product.imageLink}></img>
+                <br/>
+                <span className="product-name">{product.name}</span>
 
-            <span>{product.name}</span>
+            </div>
+            
+            
 
-
-            <button>view Details</button>
+            <Link className="product-details-link" to={`/product_details/${product.id}`} >
+                <button>View Details</button>
+            </Link>
 
 
         </div>)
@@ -19,20 +29,20 @@ const ProductList=()=>{
    })
    
    
-   return (<>
+   return (<div id='products-listing'>
     
         <h1>Our Products</h1>
 
-
-        <div id='productList'>
+        
+        <>
 
             {PL}
 
-        </div>
+        </>
     
+        <button id='go-home-btn' onClick={()=>{navigate('/')}}>go home</button>
     
-    
-    </>)
+    </div>)
 
 
 }
