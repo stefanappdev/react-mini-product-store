@@ -4,8 +4,12 @@ import '../styles/products.css'
 
 
 
+
+
 const ProductList=()=>{
    let navigate=useNavigate();
+   
+   
    const PL=products.map(product=>{
 
         return (<div key={product.id} className="product-snapshot" id={`product-${product.id}`}>
@@ -29,25 +33,24 @@ const ProductList=()=>{
    })
    
    
-   return (<div id='products-listing'>
-    
-        <h1>Our Products</h1>
+   return (
+            <div id='products-listing'>
+            
+                <h1>Our Products</h1>
 
-        
-        <>
+                
+                <>
 
-            {PL}
+                    {PL}
 
-        </>
-    
-        <button id='go-home-btn' onClick={()=>{navigate('/')}}>go home</button>
-    
-    </div>)
+                </>
+            
+                <button id='go-home-btn' onClick={()=>{navigate('/')}}>go home</button>
 
+            </div>
+   )
 
 }
-
-
 
 
 
