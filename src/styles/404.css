@@ -1,13 +1,6 @@
 @media screen and (max-width:480px) {
 
 
-#error_404_page{
-    display:flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
 
 #error_404_page img{
 

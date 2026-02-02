@@ -1,50 +1,41 @@
 import { BrowserRouter as Router, Routes, Route} from "react-router-dom"
-import React from "react";
-import  Home from'./components/Home.tsx';
-import Nomatch from "./components/Nomatch.tsx";
-import ProductList from "./components/ProductList.tsx";
-import Login from "./components/Login.tsx";
-import About from "./components/About.tsx";
+import  Home from'./components/pages/Home.tsx';
+import Nomatch from "./components/pages/Nomatch.tsx";
+import ProductList from "./components/pages/ProductList.tsx";
+import Login from "./components/pages/Login.tsx";
+import About from "./components/pages/About.tsx";
 import Item from "./components/Item.tsx";
 import { LoginContextProvider } from "./contexts/LoginContext.tsx";
 import './styles/App.css'
-
+import Logout from './components/pages/Logout.tsx'
 import RequireLogin from "./components/RequireLogin.tsx";
-import MainLayout from "./components/MainLayout.tsx";
+import MainLayout from "./components/pages/MainLayout.tsx";
 function App() {
   
 
   return (
-
-    <div id='app'>
+    
     <LoginContextProvider>
-      
+    <div id='app'>
         <Router>  
-         
-          
             <Routes>
 
               <Route path='/' element={<MainLayout/>} >
                 <Route path="" index element={<Home/>}/>
-                
                 <Route path='/products' element={<RequireLogin> <ProductList/> </RequireLogin>}/>
                 <Route path='/product/:id' element={<Item/>} />
-                
-                
                 <Route path='/about' element={<About/>}/>
-
                 <Route path='/login' element={<Login/>}/>
+                <Route path='/logout' element={<Logout/>}/>
+                <Route path='*' element={<Nomatch/>} />
               </Route>
-              
-             
-              <Route path='*' element={<Nomatch/>} />
+
             </Routes>
-         
         </Router>
      
-    
+   </div>
     </LoginContextProvider>
-    </div>
+     
   )
 }
 

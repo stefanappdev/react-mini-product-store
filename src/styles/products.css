@@ -12,7 +12,7 @@
     margin: 0.5rem 0;
     border-radius: 5px;
     padding: 0.2rem;
-    background-color:rgb(216, 216, 236) ;
+    background-color:rgb(253, 253, 253) ;
 }
 
 .product-highlight{
@@ -50,16 +50,6 @@
     font-weight: bold;
 }
 
-#products-listing{
-    display:flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    font-size: 1rem;
-    padding: 0 1rem ;
-    margin: 1rem;
-    width: min-content;
-}
 
 .product-image{
     font-size: 1rem;
@@ -78,17 +68,8 @@
 
 
 
-.product-info{
-    margin: 2rem 0;
-    padding:0 1rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-}
-
 .product-info .back-btn{
-  margin: 2rem 0;
+  margin: 1rem 0;
   background-color: #e20909;
   color:rgba(248, 250, 250, 0.993);
   width: 5rem;

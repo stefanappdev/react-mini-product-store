@@ -1,11 +1,5 @@
 @media screen and (max-width:480px) {
 
-#about-us{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
 
 #about-us>p{
 margin: 3rem;

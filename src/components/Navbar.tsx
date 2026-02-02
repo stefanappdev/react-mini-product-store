@@ -1,9 +1,10 @@
 
-import { Link } from "react-router-dom"
+import { Link,useNavigate } from "react-router-dom"
 import { useLoginAuth } from "../contexts/LoginContext"
 
 const Navbar=()=>{
     const auth=useLoginAuth();
+    const navigate=useNavigate()
 
 return (<div id='main-nav-container'>
           
@@ -13,8 +14,6 @@ return (<div id='main-nav-container'>
             <nav id="desktop-main-nav">
             <Link to='/'>Home</Link>
 
-            {auth.isLoggedIn?<></>:<Link to='login'>Login</Link>}
-
             <Link to='about'>About us</Link>
 
             <Link to='products'>Products</Link>
@@ -22,7 +21,9 @@ return (<div id='main-nav-container'>
 
 
           <div id='mobile-dropdown'>
-            <img id="mobile-dropdown-btn" alt='menu' src='/images/hamburger.svg'/>
+          
+          
+          <span className="mobile-dropdown-btn" style={{color:'white',}}>Menu</span>
               
               <nav id="mobile-dropdown-content">
                 <div>
@@ -35,18 +36,19 @@ return (<div id='main-nav-container'>
               
                 <div>
                   <Link className="mobile-dropdown-content-link" to='products'>Products</Link>
-                </div>
+                </div>   
 
-
-                {auth.isLoggedIn?<div></div>:<div>
-                  <Link className="mobile-dropdown-content-link" to='login'>Login</Link>
-                </div>}
-              
-              
+                {auth.isLoggedIn===false?<div>
+                  <Link to='login' className="mobile-dropdown-content-link" >Login </Link> 
+                </div>:""}
+                          
               </nav>
+
+
           </div>
         
-  
+
+            {auth.isLoggedIn?<button style={{borderRadius:'5px', width:'100px', height:"35px",borderStyle:'none', padding:'2px', backgroundColor:'#f10808ff',color:'white',}} onClick={()=>navigate('/logout')}>Logout</button>:""}
 
         </div>)}
 

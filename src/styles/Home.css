@@ -2,19 +2,11 @@
 
 @media screen and (max-width:480px) {
 
-#Home{
-    display:flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-   
-}
-
 
 .app-logo{
- border-radius: 50px;
- width: 55%;
+ border-radius: 50%;
+ width: 35%;
+ height: 35%;
  margin:1rem 0 ;
 }
 
@@ -34,11 +26,13 @@
 }
 
 #about-us-btn{
-    background-color: rgb(213, 218, 228);
+    background-color: #1c5cd3;
+    
 }
 
 #about-us-btn>a{
-    color:rgba(14, 1, 1, 0.945)
+        color:rgb(246, 252, 252);
+
 }
 
 #view-products-btn>a{

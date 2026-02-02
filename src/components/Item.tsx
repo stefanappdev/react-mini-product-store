@@ -1,6 +1,7 @@
 import { useParams,useNavigate } from "react-router-dom";
 import { products } from "./products";
 import '../styles/products.css'
+import '../styles/App.css'
 
 const Item=()=>{
     let {id}=useParams();

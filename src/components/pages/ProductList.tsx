@@ -1,7 +1,7 @@
 import { Link, useNavigate } from "react-router-dom";
-import { products } from "./products";
-import '../styles/products.css'
-import '../styles/App.css'
+import { products } from "../products";
+import '../../styles/products.css'
+import '../../styles/App.css'
 
 
 
@@ -34,7 +34,7 @@ const ProductList=()=>{
    
    
    return (
-            <div id='products-listing'>
+            <div id='products-page'>
             
                 <h1>Our Products</h1>
 
