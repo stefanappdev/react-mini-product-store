@@ -7,6 +7,9 @@ const Navbar=()=>{
 
 return (<div id='main-nav-container'>
           
+
+           <span>Novatech Electronics</span>
+
             <nav id="desktop-main-nav">
             <Link to='/'>Home</Link>
 

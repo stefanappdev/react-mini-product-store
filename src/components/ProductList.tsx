@@ -1,6 +1,7 @@
 import { Link, useNavigate } from "react-router-dom";
 import { products } from "./products";
 import '../styles/products.css'
+import '../styles/App.css'
 
 
 
@@ -16,14 +17,13 @@ const ProductList=()=>{
 
             <div className="product-highlight">
                 <img className="product-image" alt={product.name} src={product.imageLink}></img>
-                <br/>
                 <span className="product-name">{product.name}</span>
 
             </div>
             
             
 
-            <Link className="product-details-link" to={`/product_details/${product.id}`} >
+            <Link className="product-details-link" to={`/product/${product.id}`} >
                 <button>View Details</button>
             </Link>
 

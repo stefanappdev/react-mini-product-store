@@ -1,4 +1,3 @@
-
 *{
     padding: 0;
     margin: 0;
@@ -12,68 +11,5 @@
 #app{
    background-color: rgba(220, 236, 240, 0.603);
    width:30rem;
-   height:150vh;
-}
-
-@media screen and (max-width:480px) {
-
-#main-nav-container{
-    display: flex;
-    justify-content: flex-start;
-    font-size: 1rem;
-    padding:0.5em 1em;
-    background-color: #f8f9fc;
-    height: 3em;
-    width:30em;
-    border-radius: 5px;
-    border-bottom: 2px solid #1e1e1f;
-}
-
-
-
-
-
-#mobile-dropdown-btn{
-    height: 2em;
-    font-size: 1rem;
-    width: 2em;
-    margin:0 1em;
-}
-
-
-  #mobile-dropdown {
-  position: relative;
-}
-
-#mobile-dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #f9f9f9;
-  min-width:150px;
-  height:200px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  padding: 12px 16px;
-}
-
-#mobile-dropdown-content>div{
-margin:15px;
-}
-
-.mobile-dropdown-content-link{
-text-decoration: none;
-font-size:1rem;
-font-weight:bold;
-color: rgb(44, 44, 46);
-cursor:pointer;
-}
-
-#mobile-dropdown:hover #mobile-dropdown-content {
-  display: block;
-}
-
-
-
-#desktop-main-nav{
-        display: none;
-    }
+   height:100vh;
 }

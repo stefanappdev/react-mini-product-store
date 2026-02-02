@@ -1,4 +1,4 @@
-import { Link,Outlet, }from "react-router-dom"
+import { Link}from "react-router-dom"
 import "../styles/Home.css"
 import "../styles/App.css"
 import { useLoginAuth } from "../contexts/LoginContext"
@@ -29,20 +29,19 @@ const Home=()=>{
             <button onClick={()=>navigate('/login')}>go to Login</button>}
 
             <button id='view-products-btn' className="home-btn">
-                <Link className="home-link" to='products/view'>
+                <Link className="home-link" to='products'>
                     see products
                 </Link>
             </button>
 
             <button id='about-us-btn' className="home-btn">
 
-            <Link className="home-link" to='/about/view'>
+            <Link className="home-link" to='about'>
                  About us
             </Link>
 
             </button>
             
-            <Outlet/>
         </nav>
 
 
