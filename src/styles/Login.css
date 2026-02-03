@@ -1,0 +1,22 @@
+
+
+
+
+
+
+
+@media screen and (min-width:481px) {
+#Login-page>h1{
+margin: 1.2rem;
+}
+
+}
+
+@media screen and (min-width:481px) and (max-width:768px) {
+
+#Login-page>h1{
+margin: 1.2rem;
+}
+
+
+}

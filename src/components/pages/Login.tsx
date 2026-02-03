@@ -1,5 +1,7 @@
 import { useLoginAuth } from "../../contexts/LoginContext"
 import { useNavigate } from "react-router-dom";
+import '../../styles/Login.css'
+import'../../styles/App.css'
 
 
 const Login=()=>{
@@ -17,8 +19,7 @@ const Login=()=>{
     
     <h1>Login Page</h1>
 
-    <button onClick={handleLogin}>Login</button>
-
+     <button onClick={handleLogin} style={{borderRadius:'5px', width:'100px', height:"35px",borderStyle:'none', padding:'2px', backgroundColor:'#219727ff',color:'white',}}>Login</button>
   
     
     </div>)

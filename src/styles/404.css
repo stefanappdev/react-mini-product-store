@@ -29,3 +29,38 @@
 }
 
 }
+
+
+
+
+@media screen and (min-width:481px) and (max-width:768px) {
+
+
+
+#error_404_page img{
+
+    width: 35%;
+    height: 35%;
+    border-radius:50px;
+}
+
+
+#error_404_page span{
+    font-weight: bold;
+    margin:1rem 0;
+    font-size: large;
+}
+
+
+#error_404_page>button{
+  margin: 2rem 0;
+  background-color: #e20909;
+  color:rgba(248, 250, 250, 0.993);
+  width: 5rem;
+  border-radius: 5px;
+  font-weight: bold;
+  height: 3rem;
+  border-style:none;
+}
+
+}

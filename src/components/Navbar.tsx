@@ -23,34 +23,50 @@ return (<div id='main-nav-container'>
           <div id='mobile-dropdown'>
           
           
-          <span className="mobile-dropdown-btn" style={{color:'white',}}>Menu</span>
-              
-              <nav id="mobile-dropdown-content">
-                <div>
-                  <Link className="mobile-dropdown-content-link" to='/'>Home</Link>
-                </div>
-              
-                <div>
-                  <Link className="mobile-dropdown-content-link" to='about'>About us</Link>
-                </div>
-              
-                <div>
-                  <Link className="mobile-dropdown-content-link" to='products'>Products</Link>
-                </div>   
+            <span className="mobile-dropdown-btn" style={{color:'white',}}>Menu</span>
+                
+                {!auth.isLoggedIn?<nav id="mobile-dropdown-content">
+                  <div>
+                    <Link className="mobile-dropdown-content-link" to='/'>Home</Link>
+                  </div>
+                
+                  <div>
+                    <Link className="mobile-dropdown-content-link" to='about'>About us</Link>
+                  </div>
+                
+                  <div>
+                    <Link className="mobile-dropdown-content-link" to='products'>Products</Link>
+                  </div>   
 
-                {auth.isLoggedIn===false?<div>
-                  <Link to='login' className="mobile-dropdown-content-link" >Login </Link> 
-                </div>:""}
-                          
-              </nav>
+                   <div>
+                    <Link className="mobile-dropdown-content-link" to='login'>Login</Link>
+                  </div>  
+                            
+                </nav>:<nav id="mobile-dropdown-content">
+                  <div>
+                    <Link className="mobile-dropdown-content-link" to='/'>Home</Link>
+                  </div>
+                
+                  <div>
+                    <Link className="mobile-dropdown-content-link" to='about'>About us</Link>
+                  </div>
+                
+                  <div>
+                    <Link className="mobile-dropdown-content-link" to='products'>Products</Link>
+                  </div>   
 
+                   <div>
+                    <Link className="mobile-dropdown-content-link" to='logout'>Logout</Link>
+                  </div>  
 
+                            
+                </nav>}
+
+                  {auth.isLoggedIn?<button id='login-status'>Logged in</button>:
+                  <button id='login-status'>Logged out</button>}
           </div>
-        
-
-            {auth.isLoggedIn?<button style={{borderRadius:'5px', width:'100px', height:"35px",borderStyle:'none', padding:'2px', backgroundColor:'#f10808ff',color:'white',}} onClick={()=>navigate('/logout')}>Logout</button>:""}
+       
 
         </div>)}
-
 
 export default Navbar

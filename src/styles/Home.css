@@ -46,3 +46,54 @@
 }
 
 }
+
+
+
+
+
+@media screen and (min-width:481px) and (max-width:768px) {
+
+
+.app-logo{
+ border-radius: 50%;
+ width: 35%;
+ height: 35%;
+ margin:1rem 0 ;
+}
+
+.home-btn{
+    margin: 0.52rem;
+    font-size:1rem;
+    height: 2rem;
+    width: 8rem;
+    border-radius: 5px;
+    border-style:none;
+
+}
+
+#view-products-btn{
+    background-color: rgb(28, 92, 211);
+    
+}
+
+#about-us-btn{
+    background-color: #1c5cd3;
+    
+}
+
+#about-us-btn>a{
+        color:rgb(246, 252, 252);
+
+}
+
+#view-products-btn>a{
+    color: rgb(246, 252, 252);
+    
+}
+
+.home-link{
+    text-decoration: none;
+    font-weight: 200;
+}
+
+}
