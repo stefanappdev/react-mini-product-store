@@ -5,6 +5,7 @@ import '../../styles/App.css'
 
 
 
+
 const Logout = () => {
   const auth=useLoginAuth();
   const navigate=useNavigate()
@@ -21,7 +22,7 @@ const Logout = () => {
         
         <h1>Logout page</h1>
 
-      <button onClick={handleLogout} style={{borderRadius:'5px', width:'100px', height:"35px",borderStyle:'none', padding:'2px', backgroundColor:'#f10808ff',color:'white',}}>Logout</button>
+      <button id="logout-btn" onClick={handleLogout} >Logout</button>
     
     </div>
   )

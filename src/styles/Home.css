@@ -17,6 +17,8 @@
     width: 8rem;
     border-radius: 5px;
     border-style:none;
+    color:rgb(246, 252, 252);
+    font-weight: bold;
 
 }
 
@@ -30,20 +32,7 @@
     
 }
 
-#about-us-btn>a{
-        color:rgb(246, 252, 252);
 
-}
-
-#view-products-btn>a{
-    color: rgb(246, 252, 252);
-    
-}
-
-.home-link{
-    text-decoration: none;
-    font-weight: 200;
-}
 
 }
 
@@ -81,19 +70,6 @@
     
 }
 
-#about-us-btn>a{
-        color:rgb(246, 252, 252);
 
-}
-
-#view-products-btn>a{
-    color: rgb(246, 252, 252);
-    
-}
-
-.home-link{
-    text-decoration: none;
-    font-weight: 200;
-}
 
 }

@@ -5,10 +5,23 @@
 
 
 
-@media screen and (min-width:481px) {
+@media screen and (max-width:480px) {
+
+#login-btn{
+    border-radius:5px; 
+    width:100px; 
+    height:35px;
+    font-weight: bold;
+    border-style:none;
+    padding:2px; 
+    background-color:#219727ff;
+    color:white;
+}
+
 #Login-page>h1{
 margin: 1.2rem;
 }
+
 
 }
 

@@ -11,10 +11,15 @@ const About=()=>{
         <h1>About Us</h1>
 
         <p id="about-us-paragraph">
-            At <em> NovaTech Electronics</em>, we believe technology should make life simpler, faster, 
-            and more exciting. From everyday essentials to cutting-edge gadgets, 
+            At <em> NovaTech Electronics</em>, 
+            we believe technology should make life simpler, faster, 
+            and more exciting.
+            <br/>
+            
+            From everyday essentials to cutting-edge gadgets, 
             we curate a wide range of electronics designed to keep you connected, 
             productive, and entertained. 
+
             <br/>
             Whether you’re upgrading your home setup or picking up your next 
             must-have device, 

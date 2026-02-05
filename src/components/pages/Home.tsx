@@ -1,12 +1,11 @@
-import { Link}from "react-router-dom"
+import {useNavigate} from "react-router-dom"
 import "../../styles/Home.css"
 import "../../styles/App.css"
 
 
 const Home=()=>{
-    
+    const navigate=useNavigate();
     return(
-
         <div id='Home'>
       
 
@@ -20,18 +19,12 @@ const Home=()=>{
         <nav >
             
 
-            <button id='view-products-btn' className="home-btn">
-                <Link className="home-link" to='products'>
-                    see products
-                </Link>
+            <button onClick={()=>navigate('/products')} id='view-products-btn' className="home-btn">
+                See Products
             </button>
 
-            <button id='about-us-btn' className="home-btn">
-
-            <Link className="home-link" to='about'>
-                 About us
-            </Link>
-
+            <button onClick={()=>navigate('/about')} id='about-us-btn' className="home-btn">
+                     About us
             </button>
             
         </nav>

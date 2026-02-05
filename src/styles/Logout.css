@@ -1,5 +1,25 @@
 
 
+
+@media screen and (max-width:480px) {
+
+
+
+#logout-btn{
+    border-radius:5px; 
+    width:100px; 
+    height:35px;
+    font-weight:bold;
+    border-style:none; 
+    padding:2px;
+    background-color:#f10808ff;
+    color:white;
+}
+
 #Logout-page>h1{
 margin: 1.2rem;
+}
+
+
+
 }

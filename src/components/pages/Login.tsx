@@ -19,7 +19,7 @@ const Login=()=>{
     
     <h1>Login Page</h1>
 
-     <button onClick={handleLogin} style={{borderRadius:'5px', width:'100px', height:"35px",borderStyle:'none', padding:'2px', backgroundColor:'#219727ff',color:'white',}}>Login</button>
+     <button id='login-btn' onClick={handleLogin} >Login</button>
   
     
     </div>)
