@@ -13,8 +13,38 @@ footer{
 
 
 
-
 @media screen and (min-width:481px) and (max-width:768px) {
+
+footer{
+    text-align: center;
+    background-color: rgb(2, 67, 165);
+    color:rgb(243, 236, 238);
+    height: 100px;
+    
+
+    }
+
+
+}
+
+
+
+@media screen and (min-width:769px) and (max-width:1279px) {
+
+footer{
+    text-align: center;
+    background-color: rgb(2, 67, 165);
+    color:rgb(243, 236, 238);
+    height: 100px;
+    
+
+    }
+
+
+}
+
+
+@media screen and (min-width:1279px) {
 
 footer{
     text-align: center;

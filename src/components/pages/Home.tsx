@@ -16,7 +16,7 @@ const Home=()=>{
 
        
 
-        <nav >
+        <div>
             
 
             <button onClick={()=>navigate('/products')} id='view-products-btn' className="home-btn">
@@ -27,7 +27,7 @@ const Home=()=>{
                      About us
             </button>
             
-        </nav>
+        </div>
 
 
         </div>

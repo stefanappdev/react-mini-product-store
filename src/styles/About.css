@@ -1,3 +1,6 @@
+
+
+/*small mobile devices*/
 @media screen and (max-width:480px) {
 
 
@@ -28,8 +31,70 @@ font-weight: bold;
 
 
 
-
+/*large mobile devices*/
 @media screen and (min-width:481px) and (max-width:768px) {
+
+
+#about-us>p{
+margin: 3rem;
+
+}
+
+#about-us>p em{
+font-weight: bold;
+
+}
+
+
+
+.back-btn{
+  margin: 2rem 0;
+  background-color: #e20909;
+  color:rgba(248, 250, 250, 0.993);
+  width: 5rem;
+  border-radius: 5px;
+  font-weight: bold;
+  height: 3rem;
+  border-style:none;
+}
+
+}
+
+
+
+/*small Pc and laptop devices*/
+@media screen and (min-width:769px) and (max-width:1279px) {
+
+
+#about-us>p{
+margin: 3rem;
+
+}
+
+#about-us>p em{
+font-weight: bold;
+
+}
+
+
+
+.back-btn{
+  margin: 2rem 0;
+  background-color: #e20909;
+  color:rgba(248, 250, 250, 0.993);
+  width: 5rem;
+  border-radius: 5px;
+  font-weight: bold;
+  height: 3rem;
+  border-style:none;
+}
+
+}
+
+
+
+/*large PCs and laptop devices*/
+@media screen and (min-width:1280px) {
 
 
 #about-us>p{

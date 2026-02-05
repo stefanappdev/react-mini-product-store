@@ -4,7 +4,7 @@
 
 
 
-
+/*small mobile devices*/
 @media screen and (max-width:480px) {
 
 #login-btn{
@@ -25,7 +25,76 @@ margin: 1.2rem;
 
 }
 
+
+
+/*large mobile devices*/
+
 @media screen and (min-width:481px) and (max-width:768px) {
+
+  #login-btn{
+    border-radius:5px; 
+    width:100px; 
+    height:35px;
+    font-weight: bold;
+    border-style:none;
+    padding:2px; 
+    background-color:#219727ff;
+    color:white;
+}  
+
+
+
+
+#Login-page>h1{
+margin: 1.2rem;
+}
+
+
+}
+
+
+/*small laptops and pcs*/
+@media screen and (min-width:769px) and (max-width:1279px) {
+
+  #login-btn{
+    border-radius:5px; 
+    width:100px; 
+    height:35px;
+    font-weight: bold;
+    border-style:none;
+    padding:2px; 
+    background-color:#219727ff;
+    color:white;
+}  
+
+
+
+
+#Login-page>h1{
+margin: 1.2rem;
+}
+
+
+}
+
+
+
+/*large laptops and pcs*/
+@media screen and (min-width:1280px) {
+
+  #login-btn{
+    border-radius:5px; 
+    width:100px; 
+    height:35px;
+    font-weight: bold;
+    border-style:none;
+    padding:2px; 
+    background-color:#219727ff;
+    color:white;
+}  
+
+
+
 
 #Login-page>h1{
 margin: 1.2rem;
