@@ -1,9 +1,12 @@
-import { useLoginAuth } from "../contexts/LoginContext";
+import type { ReactNode } from "react";
+import { useLoginAuth } from "../contexts/LoginContext.tsx";
 import { Navigate } from "react-router-dom";
 
+type props={
+    children:ReactNode
+}
 
-
-const RequireLogin=({children})=>{
+const RequireLogin=({children}:props)=>{
     const auth=useLoginAuth();
 
 

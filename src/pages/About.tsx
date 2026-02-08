@@ -1,7 +1,7 @@
 
 import { useNavigate } from "react-router-dom"
-import '../../styles/About.css'
-import '../../styles/App.css'
+import '../styles/About.module.css'
+import '../styles/App.module.css'
 
 const About=()=>{
     let navigate=useNavigate();

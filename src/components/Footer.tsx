@@ -1,5 +1,5 @@
- import '../styles/Footer.css'
- import '../styles/App.css'
+ import '../styles/Footer.module.css'
+ import '../styles/App.module.css'
 export const Footer = () => {
    
   return (

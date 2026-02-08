@@ -1,12 +1,16 @@
 import { useParams,useNavigate } from "react-router-dom";
-import { products } from "./products";
-import '../styles/products.css'
-import '../styles/App.css'
+import { products } from "../products.ts";
+import '../styles/products.module.css'
+import '../styles/App.module.css'
 
-const Item=()=>{
-    let {id}=useParams();
+const ItemDetails=()=>{
+    let {productid}=useParams();
     let navigate=useNavigate();
-    const item=products.find(product=>product.id.toString()===id);
+    const item=products.find(product=>product.id.toString()===productid);
+
+    if (item===undefined||item===null){
+        return
+    }
 
 
     return (<>
@@ -27,4 +31,4 @@ const Item=()=>{
     </>)
 }
 
-export default Item;
+export default ItemDetails;

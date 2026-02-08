@@ -1,6 +1,6 @@
 import { useNavigate } from "react-router-dom"
-import '../../styles/App.css'
-import '../../styles/404.css'
+import '../styles/App.module.css'
+import '../styles/404.module.css'
 
 
 

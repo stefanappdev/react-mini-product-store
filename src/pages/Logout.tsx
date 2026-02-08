@@ -1,7 +1,7 @@
 import { useNavigate} from "react-router-dom"
-import { useLoginAuth } from "../../contexts/LoginContext"
-import '../../styles/Logout.css'
-import '../../styles/App.css'
+import { useLoginAuth } from "../contexts/LoginContext.tsx"
+import '../styles/Logout.module.css'
+import '../styles/App.module.css'
 
 
 

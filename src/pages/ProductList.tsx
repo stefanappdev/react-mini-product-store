@@ -1,7 +1,7 @@
 import { Link, useNavigate } from "react-router-dom";
-import { products } from "../products";
-import '../../styles/products.css'
-import '../../styles/App.css'
+import { products } from "../products.ts";
+import '../styles/products.module.css'
+import '../styles/App.module.css'
 
 
 

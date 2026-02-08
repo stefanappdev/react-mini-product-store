@@ -1,7 +1,7 @@
 
 import {useNavigate,Link} from "react-router-dom"
-import { useLoginAuth } from "../contexts/LoginContext"
-import '../styles/Header.css'
+import { useLoginAuth } from "../contexts/LoginContext.tsx"
+import '../styles/Header.module.css'
 const Navbar=()=>{
     const auth=useLoginAuth();
     const navigate=useNavigate()

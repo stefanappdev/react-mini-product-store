@@ -1,4 +1,5 @@
-import { createContext,useContext,useState} from "react";
+import React,{ createContext,useContext,useState} from "react";
+
 
 interface ProviderValues{
     Login:()=>void,
@@ -14,7 +15,11 @@ const LoginProviderValues:ProviderValues={
 };
 const LoginContext=createContext(LoginProviderValues);
 
-const LoginContextProvider=({children})=>{
+type props={
+    children:React.ReactNode;
+}
+
+const LoginContextProvider=({children}:props)=>{
 
 const[isLoggedIn,setisLoggedIn]=useState(false);
 
