@@ -1,7 +1,7 @@
 
 import AppRoutes from "./routes/routes.tsx"; 
 import { LoginContextProvider } from "./contexts/LoginContext.tsx";
-import './styles/App.module.css'
+import './App.css'
 
 function App() {
   

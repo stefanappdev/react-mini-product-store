@@ -1,7 +1,7 @@
 import { Link, useNavigate } from "react-router-dom";
 import { products } from "../products.ts";
-import '../styles/products.module.css'
-import '../styles/App.module.css'
+import ProductStyles from '../styles/products.module.css'
+
 
 
 
@@ -13,17 +13,17 @@ const ProductList=()=>{
    
    const PL=products.map(product=>{
 
-        return (<div key={product.id} className="product-snapshot" id={`product-${product.id}`}>
+        return (<div key={product.id} className={ProductStyles["product-snapshot"]} id={`product-${product.id}`}>
 
-            <div className="product-highlight">
-                <img className="product-image" alt={product.name} src={product.imageLink}></img>
-                <span className="product-name">{product.name}</span>
+            <div className={ProductStyles["product-highlight"]}>
+                <img className={ProductStyles["product-image"]} alt={product.name} src={product.imageLink}></img>
+                <span className={ProductStyles["product-name"]}>{product.name}</span>
 
             </div>
             
             
 
-            <Link className="product-details-link" to={`/product/${product.id}`} >
+            <Link className={ProductStyles["product-details-link"]} to={`/product/${product.id}`} >
                 <button>View Details</button>
             </Link>
 
@@ -34,7 +34,7 @@ const ProductList=()=>{
    
    
    return (
-            <div id='products-page'>
+            <div id='products-page' className="pages">
             
                 <h1>Our Products</h1>
 
@@ -45,7 +45,7 @@ const ProductList=()=>{
 
                 </>
             
-                <button id='go-home-btn' onClick={()=>{navigate('/')}}>go home</button>
+                <button className={ProductStyles['go-home-btn']} onClick={()=>{navigate('/')}}>go home</button>
 
             </div>
    )

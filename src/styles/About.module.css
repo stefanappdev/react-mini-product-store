@@ -4,12 +4,12 @@
 @media screen and (max-width:480px) {
 
 
-#about-us>p{
+.about-us>p{
 margin: 3rem;
 
 }
 
-#about-us>p em{
+.about-us>p em{
 font-weight: bold;
 
 }
@@ -35,12 +35,12 @@ font-weight: bold;
 @media screen and (min-width:481px) and (max-width:768px) {
 
 
-#about-us>p{
+.about-us>p{
 margin: 3rem;
 
 }
 
-#about-us>p em{
+.about-us>p em{
 font-weight: bold;
 
 }
@@ -66,12 +66,12 @@ font-weight: bold;
 @media screen and (min-width:769px) and (max-width:1279px) {
 
 
-#about-us>p{
+.about-us>p{
 margin: 3rem;
 
 }
 
-#about-us>p em{
+.about-us>p em{
 font-weight: bold;
 
 }
@@ -97,12 +97,12 @@ font-weight: bold;
 @media screen and (min-width:1280px) {
 
 
-#about-us>p{
+.about-us>p{
 margin: 3rem;
 
 }
 
-#about-us>p em{
+.about-us>p em{
 font-weight: bold;
 
 }

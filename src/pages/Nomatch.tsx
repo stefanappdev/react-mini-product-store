@@ -1,6 +1,6 @@
 import { useNavigate } from "react-router-dom"
-import '../styles/App.module.css'
-import '../styles/404.module.css'
+
+import Err404Styles from '../styles/404.module.css'
 
 
 
@@ -8,7 +8,7 @@ const Nomatch=()=>{
    
    let navigate=useNavigate();
 
-   return(<div id='error_404_page'>
+   return(<div className={`pages ${Err404Styles['error_404_page']}`}>
         <h1>Error 404 !</h1>
         <span>Hmm...Something went wrong here</span>    
 

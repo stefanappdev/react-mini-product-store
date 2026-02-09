@@ -1,7 +1,8 @@
 import { useParams,useNavigate } from "react-router-dom";
 import { products } from "../products.ts";
-import '../styles/products.module.css'
-import '../styles/App.module.css'
+import ProductStyles from '../styles/products.module.css'
+
+
 
 const ItemDetails=()=>{
     let {productid}=useParams();
@@ -14,7 +15,7 @@ const ItemDetails=()=>{
 
 
     return (<>
-        <div className="product-info">
+        <div className={`pages ${ProductStyles['product-info']}`}>
 
             <h1>{item.name}</h1>
             <br/>
@@ -23,9 +24,9 @@ const ItemDetails=()=>{
 
             <br/>
         
-           <span className="product-info-price">Price: ${item.price} USD</span>
+           <span className={ProductStyles["product-info-price"]}>Price: ${item.price} USD</span>
 
-           <button className="back-btn" onClick={()=>navigate('/products')}>Go Back</button>
+           <button className={ProductStyles["back-btn"]} onClick={()=>navigate('/products')}>Go Back</button>
         </div>
     
     </>)

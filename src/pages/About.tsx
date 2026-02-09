@@ -1,16 +1,16 @@
 
 import { useNavigate } from "react-router-dom"
-import '../styles/About.module.css'
-import '../styles/App.module.css'
+import AboutStyles from '../styles/About.module.css'
+
 
 const About=()=>{
     let navigate=useNavigate();
 
-    return(<div id="about-us">
+    return(<div className={`pages ${AboutStyles['about-us']}`}>
 
         <h1>About Us</h1>
 
-        <p id="about-us-paragraph">
+        <p className={AboutStyles["about-us-paragraph"]}>
             At <em> NovaTech Electronics</em>, 
             we believe technology should make life simpler, faster, 
             and more exciting.
@@ -27,7 +27,7 @@ const About=()=>{
             
         </p>
     
-         <button className="back-btn" onClick={()=>navigate('/')}>Go Back</button>
+         <button className={AboutStyles["back-btn"]} onClick={()=>navigate('/')}>Go Back</button>
     
     </div>)
 }

@@ -1,7 +1,7 @@
 import { useLoginAuth } from "../contexts/LoginContext.tsx"
 import { useNavigate } from "react-router-dom";
-import '../styles/Login.module.css'
-import'..//styles/App.module.css'
+import LoginStyles from '../styles/Login.module.css'
+
 
 
 const Login=()=>{
@@ -15,11 +15,11 @@ const Login=()=>{
      }
    }
    
-   return(<div id='Login-page'>
+   return(<div className="pages" id='Login-page'>
     
-    <h1>Login Page</h1>
+    <h1 className={LoginStyles["Login-header"]}>Login Page</h1>
 
-     <button id='login-btn' onClick={handleLogin} >Login</button>
+     <button className={LoginStyles['login-btn']} onClick={handleLogin} >Login</button>
   
     
     </div>)

@@ -1,7 +1,7 @@
 import { useNavigate} from "react-router-dom"
 import { useLoginAuth } from "../contexts/LoginContext.tsx"
-import '../styles/Logout.module.css'
-import '../styles/App.module.css'
+import LogoutStyles from '../styles/Logout.module.css'
+
 
 
 
@@ -18,11 +18,11 @@ const Logout = () => {
    
   }
   return (
-    <div id='Logout-page'>
+    <div className="pages" id='Logout-page'>
         
         <h1>Logout page</h1>
 
-      <button id="logout-btn" onClick={handleLogout} >Logout</button>
+      <button className={LogoutStyles["logout-btn"]} onClick={handleLogout} >Logout</button>
     
     </div>
   )

@@ -13,7 +13,7 @@ function AppRoutes() {
   return (
      <>
 
-        <BrowserRouter>
+        <Router>
           <Routes>
               <Route path='/' element={<MainLayout/>} >
                 <Route path="" index element={<Home/>}/>
@@ -25,7 +25,7 @@ function AppRoutes() {
                 <Route path='*' element={<Nomatch/>} />
               </Route>
           </Routes>
-        </BrowserRouter>
+        </Router>
             </>
   )
 }

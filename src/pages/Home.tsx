@@ -1,29 +1,29 @@
 import {useNavigate} from "react-router-dom"
-import "../styles/Home.module.css"
-import "../styles/App.module.css"
+import HomeStyles from "../styles/Home.module.css"
+
 
 
 const Home=()=>{
     const navigate=useNavigate();
     return(
-        <div id='Home'>
+        <div className="pages" id='Home'>
       
 
         <h1>Welcome to Novatech!</h1>
          <span>Transforming lives with technology</span>
 
-        <img className="app-logo" src="/images/electronics.webp"/>
+        <img className={HomeStyles["app-logo"]} src="/images/electronics.webp"/>
 
        
 
         <div>
             
 
-            <button onClick={()=>navigate('/products')} id='view-products-btn' className="home-btn">
+            <button onClick={()=>navigate('/products')} className={HomeStyles['view-products-btn']} >
                 See Products
             </button>
 
-            <button onClick={()=>navigate('/about')} id='about-us-btn' className="home-btn">
+            <button onClick={()=>navigate('/about')} className={HomeStyles['about-us-btn']} >
                      About us
             </button>
             
