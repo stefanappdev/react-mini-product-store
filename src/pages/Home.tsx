@@ -1,6 +1,6 @@
 import {useNavigate} from "react-router-dom"
 import HomeStyles from "../styles/Home.module.css"
-
+import '../tailwindstyles.css'
 
 
 const Home=()=>{
@@ -9,11 +9,11 @@ const Home=()=>{
         <div className="pages" id='Home'>
       
 
-        <h1>Welcome to Novatech!</h1>
+        <h1 className="text-3xl font-bold ">Welcome to Novatech!</h1>
          <span>Transforming lives with technology</span>
 
         <img className={HomeStyles["app-logo"]} src="/images/electronics.webp"/>
-
+ 
        
 
         <div>

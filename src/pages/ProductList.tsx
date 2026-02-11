@@ -1,8 +1,7 @@
 import { Link, useNavigate } from "react-router-dom";
 import { products } from "../products.ts";
 import ProductStyles from '../styles/products.module.css'
-
-
+import '../tailwindstyles.css'
 
 
 
@@ -24,7 +23,7 @@ const ProductList=()=>{
             
 
             <Link className={ProductStyles["product-details-link"]} to={`/product/${product.id}`} >
-                <button>View Details</button>
+                <button>see more</button>
             </Link>
 
 
@@ -36,7 +35,7 @@ const ProductList=()=>{
    return (
             <div id='products-page' className="pages">
             
-                <h1>Our Products</h1>
+                <h1 className="text-bold text-3xl">Our Products</h1>
 
                 
                 <>

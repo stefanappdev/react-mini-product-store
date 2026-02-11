@@ -1,10 +1,34 @@
 
-import {useNavigate,Link} from "react-router-dom"
+import {useNavigate,NavLink} from "react-router-dom"
 import { useLoginAuth } from "../contexts/LoginContext.tsx"
 import NavStyles from '../styles/Header.module.css'
+
+
 const Navbar=()=>{
     const auth=useLoginAuth();
-    const navigate=useNavigate()
+    const navigate=useNavigate();
+
+    const isActiveDesktopLinkStyle={
+      color:'rgb(6, 182, 212)',
+      
+
+    }
+
+    const regularDesktopLinkStyle={
+      color:'white',
+    }
+
+
+    const regularMobileLinkStyle={
+      color:'white',
+    }
+
+       const isActiveMobileLinkStyle={
+      color:'rgb(29, 78, 216)',
+      
+
+    }
+    
 
 return (<div className={NavStyles['main-nav-container']}>
           <span  className={NavStyles['company-name']}>Novatech Electronics</span>
@@ -13,15 +37,17 @@ return (<div className={NavStyles['main-nav-container']}>
             <button  className={NavStyles['mobile-dropdown-btn']}>Menu</button>
             <nav  className={NavStyles['mobile-dropdown-content']}> 
              <div>
-                <Link to='/'>Home</Link>
+                <NavLink style={({isActive})=>(isActive?isActiveMobileLinkStyle:regularMobileLinkStyle)} to='/'>
+                Home
+                </NavLink>
             </div>   
               
               <div>
-                <Link to='/products'>products</Link>
+                <NavLink style={({isActive})=>(isActive?isActiveMobileLinkStyle:regularMobileLinkStyle)} to='/products'>products</NavLink>
               </div>
               
               <div>
-                <Link to='/about'>about</Link>
+                <NavLink style={({isActive})=>(isActive?isActiveMobileLinkStyle:regularMobileLinkStyle)} to='/about'>about</NavLink>
               </div>
               
             
@@ -33,15 +59,15 @@ return (<div className={NavStyles['main-nav-container']}>
 
           <nav  className={NavStyles['desktop-nav']}> 
              <div>
-                <Link to='/'>Home</Link>
+                <NavLink style={({isActive})=>(isActive?isActiveDesktopLinkStyle:regularDesktopLinkStyle)} to='/'>Home</NavLink>
             </div>   
               
               <div>
-                <Link to='/products'>products</Link>
+                <NavLink style={({isActive})=>(isActive?isActiveDesktopLinkStyle:regularDesktopLinkStyle)} to='/products'>products</NavLink>
               </div>
               
               <div>
-                <Link to='/about'>about</Link>
+                <NavLink style={({isActive})=>(isActive?isActiveDesktopLinkStyle:regularDesktopLinkStyle)} to='/about'>about</NavLink>
               </div>
               
             
