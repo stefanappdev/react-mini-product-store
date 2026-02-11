@@ -1,14 +1,14 @@
 
 import { useNavigate } from "react-router-dom"
 import AboutStyles from '../styles/About.module.css'
-
+import '../tailwindstyles.css'
 
 const About=()=>{
     let navigate=useNavigate();
 
     return(<div className={`pages ${AboutStyles['about-us']}`}>
 
-        <h1>About Us</h1>
+        <h1 className="font-bold text-3xl">About Us</h1>
 
         <p className={AboutStyles["about-us-paragraph"]}>
             At <em> NovaTech Electronics</em>, 

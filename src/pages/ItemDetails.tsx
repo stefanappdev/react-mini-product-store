@@ -17,7 +17,7 @@ const ItemDetails=()=>{
     return (<>
         <div className={`pages ${ProductStyles['product-info']}`}>
 
-            <h1>{item.name}</h1>
+            <h1 className="text-2xl">{item.name}</h1>
             <br/>
 
             <img src={item.imageLink} alt={item.name}/>
